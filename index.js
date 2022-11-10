@@ -6,6 +6,11 @@ app.get('/', (req, res) => {
     res.send('Hello World -- it watches main brach for changes!');
 });
 
+
+app.get('/other', (req, res) => {
+    res.send('double checking');
+});
+
 app.listen(port, () => {
     console.log(`Example app listening on port ${port}`);
 });
